@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhuyong.test.aop.mapper.UserMapper" > 
+ 	<!-- <resultMap id="BaseResultMap" type="com.jites.airport.model.activity.ActivityShareModel" >
+      <result column="userid" property="userid"/>
+      <result column="totalPoints" property="totalPoints"/>
+   </resultMap> -->
+
+   
+   <select id="queryUserList" resultType="java.util.Map">
+      	select * from tb_usertbl
+   </select>
+   
+   
+</mapper>   
