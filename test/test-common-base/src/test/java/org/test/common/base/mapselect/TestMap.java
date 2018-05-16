@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import com.zhuyong.test.common.base.util.JSONUtils;
+import com.zhuyong.test.common.base.util.json.JSONUtils;
 
 public class TestMap {
 	

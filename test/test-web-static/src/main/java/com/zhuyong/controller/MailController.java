@@ -26,7 +26,7 @@ public class MailController {
 	
 	@RequestMapping(value="/sendMail",method = {GET, POST}, produces = { "application/json;charset=UTF-8" })
 	@ResponseBody
-	public Object sendMail(HttpServletRequest request) throws Exception {
+	public String sendMail(HttpServletRequest request) throws Exception {
 		sendSomeThingMsg("测试邮件", "发给joezhu@jites.com.cn的中奖邮箱");
 		return null;
 	}

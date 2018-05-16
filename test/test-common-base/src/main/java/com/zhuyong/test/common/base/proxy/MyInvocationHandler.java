@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Scanner;
 
-import com.zhuyong.test.common.base.util.JSONUtils;
+import com.zhuyong.test.common.base.util.json.JSONUtils;
 
 
 /**

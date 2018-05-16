@@ -1,0 +1,1 @@
+test-web-static简单的 web 项目，集成了 mybatis

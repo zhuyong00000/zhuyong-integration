@@ -1,7 +1,8 @@
 package com.zhuyong.test.aop.client;
 
 import com.zhuyong.test.aop.model.Person;
-import com.zhuyong.test.common.base.util.JSONUtils;
+import com.zhuyong.test.common.base.util.json.JSONUtils;
+
 
 public class CGLibClient {
 	

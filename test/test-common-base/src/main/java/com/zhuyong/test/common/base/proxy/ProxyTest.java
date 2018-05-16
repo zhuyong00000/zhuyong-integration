@@ -1,14 +1,11 @@
 package com.zhuyong.test.common.base.proxy;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import org.junit.Test;
 
 public class ProxyTest {
 	
 	
-	@Test
 	public void testProxy() throws Throwable {
 		// 实例化目标对象
 		UserService userService = new UserServiceImpl();

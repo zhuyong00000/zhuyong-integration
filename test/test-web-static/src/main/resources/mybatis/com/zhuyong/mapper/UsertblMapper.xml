@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhuyong.mapper.UsertblMapper">
+
+	<select id="getUserTBLInfo" resultType="java.util.Map">
+		SELECT
+			usertbl.userId as userId,
+			usertbl.headPortrait as headPortrait,
+			usertbl.nickName as nickName,
+			usertbl.mobilePhoneNo as mobilePhoneNo,
+			usertbl.PointsBaLance as pointsBaLance,
+			usertbl.fullName as fullName,
+			usertbl.sex as sex,
+			usertbl.uid as uid,
+			usertbl.docNum as docNum
+		FROM
+			tb_usertbl usertbl
+		WHERE
+			usertbl.UserId = #{UserId}
+	</select>
+
+	
+</mapper>   
