@@ -59,6 +59,25 @@
 						<encoding>UTF8</encoding>
 					</configuration>
 				</plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.0.2</version>
+					<configuration>
+                 		<nonFilteredFileExtensions>  
+                 		<!-- maven打包时如何去除不需要转码的资源文件 -->
+                       <!--<nonFilteredFileExtension>woff</nonFilteredFileExtension>-->  
+                       <!--<nonFilteredFileExtension>eot</nonFilteredFileExtension>-->  
+                       <!--<nonFilteredFileExtension>ttf</nonFilteredFileExtension>-->  
+                       <!--<nonFilteredFileExtension>svg</nonFilteredFileExtension>-->  
+                       <nonFilteredFileExtension>xls</nonFilteredFileExtension>  
+                       <nonFilteredFileExtension>xlsx</nonFilteredFileExtension>  
+                   	 	</nonFilteredFileExtensions>  
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+				
 				<plugin>
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.4</version>
@@ -66,7 +85,7 @@
 						<warSourceDirectory>src/main/webapp</warSourceDirectory>
 					</configuration>
 				</plugin>
-
+				
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>tomcat-maven-plugin</artifactId>
@@ -310,7 +329,19 @@
 			<version>7.0</version>
 			<!-- <scope>provided</scope> -->
 		</dependency>
-	    
+
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-base</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-annotation</artifactId>
+		</dependency>
   	</dependencies>
 </project>
 

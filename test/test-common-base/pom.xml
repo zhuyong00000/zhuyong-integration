@@ -14,6 +14,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -162,10 +164,26 @@
 		<scope>provided</scope>
 	</dependency>
 	
-	<!-- hibernate validate -->
+	<!-- hibernate validate start -->
 	<dependency>
 		<groupId>org.hibernate</groupId>
 		<artifactId>hibernate-validator</artifactId>
 	</dependency>
+	  <!-- hibernate validate end -->
+	
+	<dependency>
+		  <groupId>cn.afterturn</groupId>
+		  <artifactId>easypoi-web</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>cn.afterturn</groupId>
+		  <artifactId>easypoi-base</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>cn.afterturn</groupId>
+		  <artifactId>easypoi-annotation</artifactId>
+	  </dependency>	
+	  
+	
   </dependencies>
 </project>

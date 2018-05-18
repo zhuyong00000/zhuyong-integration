@@ -34,7 +34,35 @@
 		<javax.servlet-api.version>3.0.1</javax.servlet-api.version>
 		<netty.version>3.2.6.Final</netty.version>
 		<hibernate-validator.version>5.1.3.Final</hibernate-validator.version>
+	  <cn-afterturn.version>3.1.0</cn-afterturn.version>
   </properties>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>https://mvnrepository.com/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>https://mvnrepository.com/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>maven-public</name>
+			<url>https://mvnrepository.com/nexus/content/groups/public</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
   
   <dependencyManagement>
   		<dependencies>
@@ -339,6 +367,26 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate-validator.version}</version>
 		</dependency>
+
+			<!-- easypoi 导入导出 start -->
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-base</artifactId>
+				<version>${cn-afterturn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-web</artifactId>
+				<version>${cn-afterturn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-annotation</artifactId>
+				<version>${cn-afterturn.version}</version>
+			</dependency>
+			
+			
+			<!-- easypoi 导入导出 end -->
   		</dependencies>
   </dependencyManagement>
   
